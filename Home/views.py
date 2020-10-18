@@ -36,5 +36,4 @@ def view_that_asks_for_money(request):
     # Create the instance.
     form = PayPalPaymentsForm(initial=paypal_dict)
     context = {"form": form}
-    print(form)
     return render(request, "paypal.html", context)
