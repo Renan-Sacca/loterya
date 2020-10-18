@@ -1,0 +1,28 @@
+{% load static %}
+<header>
+    <div class="navbar">
+        {% if user.is_authenticated %}
+        <a href="{% url 'dashboard' %}"><img class="logo" src="{% static 'imagens/logo_loteria.png' %}"></a> 
+        <div class="dropdown"> <img class="usuario_logo dropdown" src="{% static 'imagens/usuario.png' %}"> 
+            <div class="dropdown-content">
+                <a href="#">Perfil</a>
+                <a href="#">Transações</a>
+                <a href="{% url 'logout' %}">Logout</a>
+            </div>
+        </div>
+        <a class="itens_meio" href="{% url 'dashboard' %}"> Home</a>
+        <a class="itens_meio" href="rifas.html"> Rifas Premium</a>
+        <a class="itens_meio" href="#"> Rifas Free</a>
+        <a class="itens_meio" href="#"> Histórico</a>
+        <h1 class="itens_meio">{{ user.first_name }}</h1> 
+        {% else %}
+        <a href="#"><img class="logo" src="{% static 'imagens/logo_loteria.png' %}"></a> 
+        <a href="#"> <img class="usuario_logo" src="{% static 'imagens/usuario.png' %}"> </a>
+        <a class="itens_meio" href="{% url 'index' %}"> Home</a>
+        <a class="itens_meio" href="#"> Rifas Premium</a>
+        <a class="itens_meio" href="#"> Rifas Free</a>
+        <a class="itens_meio" href="{% url 'login' %}"> Login</a>
+        {% endif %}  
+    </div>    
+    
+</header>

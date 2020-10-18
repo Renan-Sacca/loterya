@@ -1,0 +1,131 @@
+body{
+  background: linear-gradient( black,darkblue);
+  font-family: 'Ranchers', cursive;
+
+}
+header {
+  background: linear-gradient(#FFFFFF,#555555);
+  /* to right,red, blue,purple */
+  padding: 12px 0;
+  border-radius: 0 0 25px 25px;
+
+
+}
+
+.navbar {
+    width: 100%;
+}
+
+.logo {
+  width: 70px;
+  float: left;
+  padding: 0 20px;
+}
+
+.itens_meio {
+  float: left;
+  text-align: center;
+  margin: 0 0 0 50px ;
+  padding: 20px;
+  color: black;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+}
+.itens_meio:nth-child(3){
+  margin-left: 140px ;
+}
+.itens_meio:last-child{
+  float: right;
+  margin-right: -10;
+}
+
+.itens_meio:hover {
+  font-size: 27px;
+
+}
+.usuario_logo {
+    width: 90px;
+    float: right;
+    margin-right: 15px;
+    padding: 0 20px;
+    height: 70px;
+
+}
+
+.usuario_logo:hover {
+    transform: scale(1.1);
+    
+
+}
+
+.navbar {
+  position: relative;
+  display: inline-block;
+}
+.dropdown:hover {
+  cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: linear-gradient(#4704b3,#03d3ee);
+    min-width: 160px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    right: 0;
+    top: 70px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 8px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  border-radius: 10px;
+  
+  background: radial-gradient(#4b94e7,#0310c7,#000307);
+
+
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+.banner{
+  padding: 15px 5% 20px 5%;
+}
+h1 {
+  font-size: 45px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.produtos li {
+  background: linear-gradient(#FFFFFF,#555555);
+	display: inline-block;
+	text-align: center;
+	width: 15%;
+	vertical-align: top;
+	margin: 20px 20px 20px 35px;
+	padding: 30px 30px;
+	box-sizing: border-box;
+	border: 2px solid #000000;
+	border-radius: 10px;
+}
+
+.logo_armas {
+  width: 100px;
+  float: right;
+  padding: 0 20px;
+
+}
+
+
